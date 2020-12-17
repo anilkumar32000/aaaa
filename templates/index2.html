@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+<body style="background-color:-webkit-linear-gradient(left, #3931af, #00c6ff);">
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left"><br><br><br>
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>You are a few seconds away from knowing the required values!</p>
+                    </div>
+                    <div class="col-md-9 register-right">
+                    	<form action="{{ url_for('predict1')}}"method="post">
+                                <h3 class="register-heading">Enter The Required Values</h3><br><br>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" name="Number of Transactions" class="form-control" placeholder="Number of Transactions *" required="required"/><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="Memory%" class="form-control" placeholder="File thread pool count *" required="required" /><br>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="form-group">
+                                        <p style="font-size:17px">{{ prediction1_text }} </p>
+                                        </div>
+                                        <div class="form-group">
+                                        <p style="font-size:17px">{{ prediction2_text }}</p>
+                                        </div>
+                                        <div class="form-group">
+                                        <p style="font-size:17px">{{ prediction3_text }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" name="Threadcount" class="form-control" placeholder="Messaging thread pool count *" required="required" /><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="CPU%" class="form-control" placeholder="Lifecycle thread pool count *" required="required" /><br>
+                                        </div>
+                                     
+                                       
+                                        <br>
+                                        <input type="submit" class="btnRegister"  value="Predict"/><br><br>
+                                    </div>
+                                      
+                                </div>
+                            </div>
+                          
+             </form>
+                                    </div>
+                                </div>
+
+</body>
+
+</html>
+
+
