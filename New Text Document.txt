@@ -1,0 +1,8 @@
+JIRA ID::FINTBS-42503
+
+|| REMARKS::Intern Project
+
+|| DB PATCH JIRA ID::
+
+
+https://nucnocorpsvn.nucleussoftware.com:18080/svn/fintbs/branches/dev_cod_fintbs/Application/Source/AXIA_RND/Project_Management/Team/Handover/Anil Kumar aug-dec2020
